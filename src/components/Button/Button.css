@@ -3,4 +3,9 @@
   border: none;
   padding: 12px 18px;
   background: #efefef;
+  border-radius: 2px;
+}
+.un_button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
