@@ -9,7 +9,14 @@
   ],
   "types": "dist/index.d.ts",
   "author": "Ivan Lomovtcev",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/advanceddev/ui"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
