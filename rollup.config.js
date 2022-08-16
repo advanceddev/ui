@@ -8,7 +8,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const packageJson = require("./package.json");
 
-export default [ 
+export default [
   {
     moduleNameMapper: {
       ".(css|less|scss)$": "identity-obj-proxy",
@@ -30,7 +30,11 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      postcss(),
+      postcss({
+        extract: false,
+        modules: true,
+        use: ['sass'],
+      }),
       terser(),
     ],
   },

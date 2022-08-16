@@ -1,0 +1,90 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2787fa;
+	padding: 14px 20px;
+	color: #fff;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 1;
+	overflow: hidden;
+	border: none;
+	transition-property: background, box-shadow;
+	-webkit-transition: 0.1s ease-in-out;
+	-moz-transition: 0.1s ease-in-out;
+	-o-transition: 0.1s ease-in-out;
+	-ms-transition: 0.1s ease-in-out;
+	transition: 0.1s ease-in-out;
+	outline: none;
+	will-change: transform;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.icon {
+	line-height: 1;
+}
+
+.icon * {
+	line-height: 1;
+	padding: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.button.small {
+	padding: 8px 15px;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.button.large {
+	padding: 19px 30px 16px;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.button.primary {
+	background: #2787fa;
+}
+
+.button.secondary {
+	background: #ddd;
+	color: #222;
+}
+
+.button.danger {
+	background: #b73434;
+	color: #fff;
+}
+
+.button.text {
+	background: transparent;
+	color: #777;
+}
+.button:disabled,
+.button[disabled] {
+	cursor: not-allowed;
+	background: #ddd;
+	color: #777;
+}
+
+@media screen and (max-width: 414px) {
+	.button {
+		line-height: 16px;
+	}
+	.button.small {
+		font-size: 13px;
+		padding: 8px 10px;
+	}
+}

@@ -11,10 +11,8 @@ const Template: ComponentStory<typeof Button> = (args: any) => <Button {...args}
 
 export const HelloWorld = Template.bind({});
 HelloWorld.args = {
-  label: "Hello world!",
-};
-
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: "Click me!",
+  onClick: () => alert('Clicked'),
+  size: 'medium',
+  type: 'primary',
+  text: "Hello world!",
 };
