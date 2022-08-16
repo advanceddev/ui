@@ -12,9 +12,6 @@ const packageJson = require("./package.json");
 
 export default [
   {
-    moduleNameMapper: {
-      ".(css|less|scss)$": "identity-obj-proxy",
-    },
     input: "src/index.ts",
     output: [
       {
