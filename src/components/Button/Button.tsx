@@ -1,11 +1,7 @@
 import * as React from 'react'
 import s from './button.module.css'
 
-type ButtonTypes =
-	| 'primary'
-	| 'secondary'
-	| 'danger'
-	| 'text'
+type ButtonTypes = 'primary' | 'secondary' | 'danger' | 'text'
 
 type ButtonSizes = 'small' | 'medium' | 'large'
 

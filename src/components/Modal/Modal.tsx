@@ -11,7 +11,7 @@ export interface IModal {
 	modalStyle?: string
 	modalHeaderStyle?: string
 	modalWrapperStyle?: string
-  rootElem: HTMLDivElement
+	rootElem: HTMLDivElement
 }
 
 type ReturnType = [boolean, (locked: boolean) => void]
@@ -57,8 +57,6 @@ function useLockedBody(initialLocked = false): ReturnType {
 	return [locked, setLocked]
 }
 
-
-
 const Modal = ({
 	show,
 	onClose,
@@ -68,7 +66,7 @@ const Modal = ({
 	modalStyle,
 	modalHeaderStyle,
 	modalWrapperStyle,
-  rootElem
+	rootElem,
 }: IModal) => {
 	const [isBrowser, setIsBrowser] = React.useState<boolean>(false)
 	const [locked, setLocked] = useLockedBody()
@@ -77,15 +75,18 @@ const Modal = ({
 
 	React.useEffect(() => {
 		setIsBrowser(true)
-		const handleClickOutside = (e: any) => {
-			if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+		const handleClickOutside = (e: MouseEvent | TouchEvent) => {
+			if (
+				wrapperRef.current &&
+				!wrapperRef.current.contains(e.target as HTMLElement)
+			) {
 				onClose()
 				setLocked(false)
 			}
 		}
-		document.addEventListener('mousedown', handleClickOutside)
+		document.addEventListener('mousedown', e => handleClickOutside(e))
 		return () => {
-			document.removeEventListener('mousedown', handleClickOutside)
+			document.removeEventListener('mousedown', e => handleClickOutside(e))
 		}
 	}, [locked, onClose, setLocked])
 
@@ -150,9 +151,7 @@ const Modal = ({
 	) : null
 
 	if (isBrowser && rootElem) {
-		return ReactDOM.createPortal(
-			modalContent, rootElem as HTMLDivElement
-		)
+		return ReactDOM.createPortal(modalContent, rootElem as HTMLDivElement)
 	} else {
 		return null
 	}
