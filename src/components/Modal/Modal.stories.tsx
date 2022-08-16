@@ -11,6 +11,7 @@ export default {
 const Template: ComponentStory<typeof Modal> = () => {
 
   const [show, setShow] = React.useState(false)
+  const modalRoot = React.useRef<HTMLDivElement>(null)
 
   const handleToggleModal = () => {
     setShow(!show)
@@ -18,9 +19,9 @@ const Template: ComponentStory<typeof Modal> = () => {
 
   return (
   <>
-    <div id="modal-root"/>
+    <div id="modal-root" ref={modalRoot}/>
     <Button type="primary" onClick={handleToggleModal} text="Toggle modal"/>
-    <Modal show={show} onClose={() => setShow(false)}>
+    <Modal rootElem={modalRoot.current!} show={show} onClose={() => setShow(false)}>
       <h2 style={{ color: '#fff'}}>Example content</h2>
     </Modal>
   </>

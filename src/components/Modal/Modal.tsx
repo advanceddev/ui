@@ -11,6 +11,7 @@ export interface IModal {
 	modalStyle?: string
 	modalHeaderStyle?: string
 	modalWrapperStyle?: string
+  rootElem: HTMLDivElement
 }
 
 type ReturnType = [boolean, (locked: boolean) => void]
@@ -67,6 +68,7 @@ const Modal = ({
 	modalStyle,
 	modalHeaderStyle,
 	modalWrapperStyle,
+  rootElem
 }: IModal) => {
 	const [isBrowser, setIsBrowser] = React.useState<boolean>(false)
 	const [locked, setLocked] = useLockedBody()
@@ -147,9 +149,9 @@ const Modal = ({
 		</div>
 	) : null
 
-	if (isBrowser) {
+	if (isBrowser && rootElem) {
 		return ReactDOM.createPortal(
-			modalContent, document.getElementById('modal-root') as HTMLDivElement
+			modalContent, rootElem as HTMLDivElement
 		)
 	} else {
 		return null
