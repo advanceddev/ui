@@ -1,6 +1,6 @@
 {
   "name": "unreal-ui-kit",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Unreal UI kit",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -42,6 +42,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.78.0",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
