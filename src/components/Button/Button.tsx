@@ -83,4 +83,5 @@ const Button = ({
 	)
 }
 
+Button.displayName = 'Button'
 export default React.memo(Button)
