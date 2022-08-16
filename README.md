@@ -9,7 +9,7 @@
 
 ## Установка
 
-Unreal UI написана на базе `react ^18.2.0` и  `react-dom ^18.2.0`
+Unreal UI написана на базе `react ^18.2.0` и  `react-dom ^18.2.0`. В настоящее время библиотека находится на стадии разработки и оптимизации. Всем PR - r u welcome!
 
 Установить библиотеку можно, выполнив одну из следующих команд:
 
@@ -34,13 +34,13 @@ import { Button } from 'unreal-ui-kit'
 const SomeComponent = () => {
 
     const handleClick = () => {
-        alert('Clicked!')
+    	alert('Clicked!')
     }
 
     return(
-		<>
-            <Button text="Click me!" type="primary" onClick={handleClick}/>
-		</>
+    	<>
+		<Button text="Click me!" type="primary" onClick={handleClick}/>
+	</>
     )
 }
 ```
