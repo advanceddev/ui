@@ -26,6 +26,7 @@
 		"@babel/preset-typescript": "^7.18.6",
 		"@rollup/plugin-babel": "^5.3.1",
 		"@rollup/plugin-node-resolve": "^13.3.0",
+		"@rollup/plugin-replace": "^4.0.0",
 		"@rollup/plugin-typescript": "^8.3.4",
 		"@storybook/addon-actions": "^6.5.10",
 		"@storybook/addon-essentials": "^6.5.10",
@@ -58,7 +59,6 @@
 		"rollup-plugin-dts": "^4.2.2",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-postcss": "^4.0.2",
-		"rollup-plugin-replace": "^2.2.0",
 		"rollup-plugin-terser": "^7.0.2",
 		"storybook-css-modules": "^1.0.8",
 		"tslib": "^2.4.0",
@@ -68,7 +68,9 @@
 		"rollup": "rollup -c",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
-		"lint": "eslint src"
+		"lint": "eslint src",
+		"publish-npm": "npm publish --access public --ignore-scripts --@advanceddev:registry='https://registry.npmjs.org'",
+		"postpublish": "npm run publish-npm"
 	},
 	"dependencies": {}
 }

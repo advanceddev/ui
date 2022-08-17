@@ -15,13 +15,13 @@ Unreal UI написана на базе `react ^18.2.0` и `react-dom ^18.2.0`.
 Установить библиотеку можно, выполнив одну из следующих команд:
 
 ```sh
-yarn add unreal-ui-kit
+yarn add @advanceddev/unreal-ui-kit
 ```
 
 или
 
 ```sh
-npm i unreal-ui-kit
+npm i @advanceddev/unreal-ui-kit
 ```
 
 ## Использование
