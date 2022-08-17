@@ -30,7 +30,7 @@ npm i @advanceddev/unreal-ui-kit
 
 ```tsx
 import * as React from 'react'
-import { Button } from 'unreal-ui-kit'
+import { Button } from '@advanceddev/unreal-ui-kit'
 
 const SomeComponent = () => {
 	const handleClick = () => {

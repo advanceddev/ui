@@ -33,6 +33,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm i
+      - name: Create bundle
+      - run: npm run rollup
       - name: Set package registry
         run: npm config set registry https://npm.pkg.github.com
       - name: Github package registry authentication
