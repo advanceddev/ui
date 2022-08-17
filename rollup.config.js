@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve'
 import replace from 'rollup-plugin-replace'
 import typescript from '@rollup/plugin-typescript'
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
 import dts from 'rollup-plugin-dts'
 import postcss from 'rollup-plugin-postcss'
 import { terser } from 'rollup-plugin-terser'
