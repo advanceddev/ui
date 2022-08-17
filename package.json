@@ -15,7 +15,7 @@
 		"url": "https://github.com/advanceddev/ui.git"
 	},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com"
+		"registry": "https://npm.pkg.github.com/@advanceddev"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",
