@@ -1,6 +1,6 @@
 {
 	"name": "unreal-ui-kit",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Unreal UI kit",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
