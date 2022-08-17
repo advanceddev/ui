@@ -12,7 +12,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/advanceddev/ui"
+		"url": "https://github.com/advanceddev/ui.git"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",
