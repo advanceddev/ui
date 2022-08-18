@@ -1,6 +1,7 @@
 # Unreal UI
 
-### Библиотека компонентов веб-студии Unreal Dev
+[![CI/CD pipeline](https://github.com/advanceddev/ui/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/advanceddev/ui/actions/workflows/publish.yml) 
+
 
 Набор элементов интерфейса для проектов на ReactJS. Все компоненты написаны с нуля без использованя сторонних UI-библиотек.
 
