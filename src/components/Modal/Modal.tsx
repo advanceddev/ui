@@ -1,6 +1,6 @@
 import * as React from 'react'
 import ReactDOM from 'react-dom'
-import s from './modal.module.css'
+import s from './modal.module.scss'
 
 export interface IModal {
 	show: boolean

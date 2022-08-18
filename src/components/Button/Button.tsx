@@ -1,5 +1,5 @@
 import * as React from 'react'
-import s from './button.module.css'
+import s from './button.module.scss'
 
 type ButtonTypes = 'primary' | 'secondary' | 'danger' | 'text'
 
