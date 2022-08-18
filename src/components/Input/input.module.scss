@@ -1,0 +1,50 @@
+.wrapper {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	max-width: 480px;
+	width: 100%;
+	font-family: Inter, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	&__row {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	&__label {
+		font-size: 14px;
+		line-height: 26px;
+		margin-right: 4px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	&__input {
+		outline: none;
+		padding: 12px 8px;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		font-size: 16px;
+		&[type='checkbox'] {
+			margin-right: 6px;
+			margin-left: 0;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	&__password_icon {
+		position: absolute;
+		display: block;
+		bottom: 12px;
+		right: 12px;
+		opacity: 0.5;
+		&:hover {
+			cursor: pointer;
+			opacity: 1;
+		}
+	}
+}
