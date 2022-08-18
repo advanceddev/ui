@@ -1,6 +1,6 @@
 # Unreal UI
 
-[![CI/CD pipeline](https://github.com/advanceddev/ui/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/advanceddev/ui/actions/workflows/publish.yml) 
+[![CI/CD pipeline](https://github.com/advanceddev/ui/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/advanceddev/ui/actions/workflows/publish.yml) [![NPM version](https://img.shields.io/npm/v/@advanceddev/unreal-ui-kit.svg?style=flat)](https://www.npmjs.com/package/@advanceddev/unreal-ui-kit) [![NPM monthly downloads](https://img.shields.io/npm/dm/@advanceddev/unreal-ui-kit.svg?style=flat)](https://npmjs.org/package/@advanceddev/unreal-ui-kit) [![NPM total downloads](https://img.shields.io/npm/dt/@advanceddev/unreal-ui-kit.svg?style=flat)](https://npmjs.org/package/@advanceddev/unreal-ui-kit)
 
 
 Набор элементов интерфейса для проектов на ReactJS. Все компоненты написаны с нуля без использованя сторонних UI-библиотек.
