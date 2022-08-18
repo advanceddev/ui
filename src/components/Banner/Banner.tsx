@@ -28,4 +28,5 @@ const Banner = ({ imageSrc, imageAlt, children }: IBanner) => {
 	)
 }
 
+Banner.displayName = 'Banner'
 export default React.memo(Banner)
