@@ -1,7 +1,8 @@
 {
 	"name": "@advanceddev/unreal-ui-kit",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "Unreal UI kit",
+	"homepage": "http://advanceddev.github.io/ui",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
 	"files": [
@@ -52,6 +53,7 @@
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.30.1",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"gh-pages": "^4.0.0",
 		"identity-obj-proxy": "^3.0.0",
 		"node-sass": "^7.0.1",
 		"postcss": "^8.4.16",
@@ -75,7 +77,10 @@
 		"build-storybook": "build-storybook",
 		"lint": "eslint src",
 		"publish-npm": "npm publish --access public --ignore-scripts --@advanceddev:registry='https://registry.npmjs.org'",
-		"postpublish": "npm run publish-npm"
+		"postpublish": "npm run publish-npm",
+		"predeploy": "npm run build-storybook",
+		"deploy-storybook": "gh-pages -d storybook-static",
+		"build-storybook": "build-storybook"
 	},
 	"dependencies": {}
 }
